@@ -1,8 +1,8 @@
 name: dashed_circle
 description: A package for drawing dashed circles.
 version: 0.0.1
-author:
-homepage:
+author: Niklas Portmann
+homepage: https://gitlab.com/NiklasPor/dashed-circle
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
