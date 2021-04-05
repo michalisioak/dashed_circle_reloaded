@@ -13,7 +13,7 @@ class DashedCircle extends StatelessWidget {
   final Color color;
   final double gapSize;
   final double strokeWidth;
-  final Widget child;
+  final Widget? child;
 
   DashedCircle(
       {this.child,

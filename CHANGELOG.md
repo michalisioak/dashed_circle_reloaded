@@ -1,3 +1,7 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.2] - 05/04/2021
 
-* TODO: Describe initial release.
+* Null safety support.
+
+## [0.0.1] - 
+
+* Initial version.
