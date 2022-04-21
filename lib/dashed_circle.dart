@@ -1,12 +1,7 @@
-library dashed_circle;
+library dashed_circle_reloaded;
 
 import 'dart:math';
-import 'package:flutter/widgets.dart';
-
-const int _DefaultDashes = 20;
-const Color _DefaultColor = Color(0);
-const double _DefaultGapSize = 3.0;
-const double _DefaultStrokeWidth = 2.5;
+import 'package:flutter/material.dart';
 
 class DashedCircle extends StatelessWidget {
   final int dashes;
@@ -15,12 +10,14 @@ class DashedCircle extends StatelessWidget {
   final double strokeWidth;
   final Widget? child;
 
-  DashedCircle(
-      {this.child,
-      this.dashes = _DefaultDashes,
-      this.color = _DefaultColor,
-      this.gapSize = _DefaultGapSize,
-      this.strokeWidth = _DefaultStrokeWidth});
+  const DashedCircle({
+    Key? key,
+    this.child,
+    this.dashes = 20,
+    this.color = Colors.black,
+    this.gapSize = 3.0,
+    this.strokeWidth = 2.5,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +38,12 @@ class DashedCirclePainter extends CustomPainter {
   final double gapSize;
   final double strokeWidth;
 
-  DashedCirclePainter(
-      {this.dashes = _DefaultDashes,
-      this.color = _DefaultColor,
-      this.gapSize = _DefaultGapSize,
-      this.strokeWidth = _DefaultStrokeWidth});
+  DashedCirclePainter({
+    this.dashes = 20,
+    this.color = Colors.black,
+    this.gapSize = 3.0,
+    this.strokeWidth = 2.5,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -55,7 +53,7 @@ class DashedCirclePainter extends CustomPainter {
     for (int i = 0; i < dashes; i++) {
       final Paint paint = Paint()
         ..color = color
-        ..strokeWidth = _DefaultStrokeWidth
+        ..strokeWidth = strokeWidth
         ..style = PaintingStyle.stroke;
 
       canvas.drawArc(Offset.zero & size, gap + singleAngle * i,

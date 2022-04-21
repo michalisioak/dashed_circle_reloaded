@@ -1,6 +1,8 @@
-# dashed_circle
+# dashed_circle_reloaded
 
 A flutter package for drawing dashed circles. Can also be used with CustomPaint.
+
+Fork of [dashed_circle](https://gitlab.com/NiklasPor/dashed-circle)
 
 ## Usage
 ![Dashed Circle with Bill Gates](https://i.imgur.com/385vWue.png)

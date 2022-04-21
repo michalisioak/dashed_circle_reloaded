@@ -1,11 +1,19 @@
-name: dashed_circle
+name: dashed_circle_reloaded
 description: A flutter package for drawing dashed circles. Can also be used with CustomPaint.
-version: 0.0.2
-author: Niklas Portmann <niklaspor@gmail.com>
-homepage: https://gitlab.com/NiklasPor/dashed-circle
+version: 0.0.3
+repository: https://github.com/michalisioak/dashed_circle_reloaded
+issue_tracker: https://github.com/michalisioak/dashed_circle_reloaded/issues
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
