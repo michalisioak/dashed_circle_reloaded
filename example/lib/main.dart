@@ -1,4 +1,4 @@
-import 'package:dashed_circle_reloaded/dashed_circle.dart';
+import 'package:dashed_circle_reloaded/dashed_circle_reloaded.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
